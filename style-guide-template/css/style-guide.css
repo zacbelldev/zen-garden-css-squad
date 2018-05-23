@@ -825,13 +825,13 @@ section:nth-of-type(6) h2::before {
   padding: .6em 0;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
-  background: #5f8ee4;
+  background: #53fdff;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
-  background: #759de8;
+  background: #4fc1be;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
-  background: #497fe0;
+  background: #84efe9;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
   background: #19191a;
@@ -843,23 +843,26 @@ section:nth-of-type(6) h2::before {
   background: #0d0d0d;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-  background: #e4655f;
+  background: #fd5f00;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-  background: #e87a75;
+  background: #f99f28;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-  background: #e05049;
+  background: #fc851a;
 }
+
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
-  background: #e6e6e6;
+  background: #ffffff;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
-  background: #f3f3f3;
+  background: white;
 }
 .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
-  background: #d9d9d9;
+  background: #f2f2f2;
 }
+/*
+
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
   background: #ffffff;
 }
@@ -869,6 +872,8 @@ section:nth-of-type(6) h2::before {
 .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
   background: #f2f2f2;
 }
+*/
+
 @media only screen and (min-width: 768px) {
   .cd-colors li {
     width: 19%;
