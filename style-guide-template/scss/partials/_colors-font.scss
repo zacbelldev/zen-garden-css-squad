@@ -1,5 +1,13 @@
-$primary-font: 'Arial', sans-serif;
-$secondary-font: 'Arial', sans-serif;
+@font-face {
+    font-family: 'Tron';
+    src: url('/tron-font/tron.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+
+
+$primary-font: 'Tron', sans-serif;
+$secondary-font: 'Electrolize', sans-serif;
 
 // color palette - these colors will be the color swatches of the Colors section
 
