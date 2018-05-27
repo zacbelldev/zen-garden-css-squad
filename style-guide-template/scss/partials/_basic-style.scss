@@ -546,13 +546,17 @@ section {
 }
 
 /* xTypography section - basic style */
-
 .cd-typography {
-
+    h1 {
+        font-family: $tron;
+    }
 	h1::before {
-		content: 'Aa - ';
+		content: '';
 		color: $color-1;
 	}
+    p {
+        font-family: $electro;
+    }
 }
 
 .cd-buttons {

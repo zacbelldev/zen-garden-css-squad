@@ -75,7 +75,7 @@ main > h1 {
       color: #ffffff; } }
 
 h1, h2 {
-  font-family: "Tron", sans-serif;
+  font-family: "Merriweather", serif;
   color: #000000; }
 
 h1 {
@@ -281,7 +281,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Tron", sans-serif; }
+  font-family: "Merriweather", serif; }
 
 a {
   text-decoration: none; }
@@ -290,7 +290,7 @@ img {
   max-width: 100%; }
 
 input, textarea, select {
-  font-family: "Tron", sans-serif;
+  font-family: "Merriweather", serif;
   font-size: 1.6rem; }
 
 header {
@@ -696,9 +696,13 @@ section {
       padding: 2em; } }
 
 /* xTypography section - basic style */
+.cd-typography h1 {
+  font-family: "Tron", sans-serif; }
 .cd-typography h1::before {
-  content: 'Aa - ';
+  content: '';
   color: #53fdff; }
+.cd-typography p {
+  font-family: "Electrolize", sans-serif; }
 
 .cd-buttons .cd-box:first-of-type {
   border-bottom-left-radius: 0;
