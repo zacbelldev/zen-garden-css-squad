@@ -75,6 +75,7 @@ main > h1 {
       color: #ffffff; } }
 
 h1, h2 {
+  font-family: "Tron", sans-serif;
   color: #19191a; }
 
 h1 {
