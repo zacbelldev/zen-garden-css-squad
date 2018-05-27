@@ -8,18 +8,18 @@ body {
 
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #e6e6e6;
+  border: 1px solid #ffffff;
   border-radius: 3px;
   background: #ffffff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px; }
 
 header {
-  background-color: #19191a; }
+  background-color: #000000; }
 
 .cd-logo {
   /* logo box style */
-  background-color: #5f8ee4;
+  background-color: #53fdff;
   width: 120px; }
   @media only screen and (min-width: 1024px) {
     .cd-logo {
@@ -27,16 +27,16 @@ header {
 
 .cd-main-nav {
   /* main navigation background color - full screen on small devices */
-  background: #19191a; }
+  background: #000000; }
   .cd-main-nav li a {
     color: #ffffff;
-    border-color: #262627; }
+    border-color: #0d0d0d; }
   @media only screen and (min-width: 1024px) {
     .cd-main-nav li a {
-      color: #7d7d82; }
+      color: #666666; }
       .cd-main-nav li a.selected {
         color: #ffffff;
-        box-shadow: 0 2px 0 #5f8ee4; }
+        box-shadow: 0 2px 0 #53fdff; }
       .no-touch .cd-main-nav li a:hover {
         color: #ffffff; } }
 
@@ -56,19 +56,19 @@ header {
 
 .cd-download {
   /* download button top-right visible on big devices */
-  background-color: #323234; }
+  background-color: #1a1a1a; }
   .no-touch .cd-download:hover {
-    background-color: #3f3f41; }
+    background-color: #262626; }
   .cd-download span {
     /* tooltip */
-    background: #5f8ee4;
+    background: #53fdff;
     color: #ffffff; }
     .cd-download span::before {
       /* right arrow color */
-      border-color: #5f8ee4; }
+      border-color: #53fdff; }
 
 main > h1 {
-  color: #19191a; }
+  color: #000000; }
   @media only screen and (min-width: 1600px) {
     main > h1 {
       /* title goes into the header on big devices */
@@ -76,7 +76,7 @@ main > h1 {
 
 h1, h2 {
   font-family: "Tron", sans-serif;
-  color: #19191a; }
+  color: #000000; }
 
 h1 {
   font-size: 2.4rem;
@@ -101,14 +101,14 @@ h2 {
 
 section > h2::before {
   /* number before each section title */
-  color: silver; }
+  color: #d9d9d9; }
 
 p {
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #58585b; }
+  color: #404040; }
   p a {
-    color: #5f8ee4;
+    color: #53fdff;
     text-decoration: underline; }
   @media only screen and (min-width: 768px) {
     p {
@@ -123,33 +123,33 @@ p {
   color: #ffffff;
   padding: .6em 2.2em;
   cursor: pointer;
-  background: #5f8ee4; }
+  background: #53fdff; }
   .btn:focus {
     outline: none; }
   .no-touch .btn:hover {
-    background: #759de8; }
+    background: #6dfdff; }
   .btn.btn-success {
     background: #6fce72; }
     .no-touch .btn.btn-success:hover {
       background: #82d485; }
   .btn.btn-alert {
-    background: #e4655f; }
+    background: #fd5f00; }
     .no-touch .btn.btn-alert:hover {
-      background: #e87a75; }
+      background: #ff6e18; }
   .btn.btn-outline {
-    color: #5f8ee4;
+    color: #53fdff;
     background: transparent;
-    box-shadow: inset 0 0 0 1px #5f8ee4; }
+    box-shadow: inset 0 0 0 1px #53fdff; }
     .no-touch .btn.btn-outline:hover {
       color: #ffffff;
-      background: #5f8ee4; }
+      background: #53fdff; }
   @media only screen and (min-width: 768px) {
     .btn {
       font-size: 1.6rem; } }
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
-  color: #5f8ee4; }
+  color: #53fdff; }
 
 .cd-icons li {
   /* icons size */
@@ -157,7 +157,7 @@ p {
   height: 32px; }
 
 input[type=text], select {
-  border: 1px solid #e6e6e6;
+  border: 1px solid #ffffff;
   border-radius: .25em;
   background: #ffffff; }
   input[type=text]:focus, select:focus {
@@ -170,11 +170,11 @@ input[type=text] {
     border-color: #6fce72;
     box-shadow: 0 0 6px rgba(111, 206, 114, 0.2); }
   input[type=text].alert {
-    border-color: #e4655f;
-    box-shadow: 0 0 6px rgba(228, 101, 95, 0.2); }
+    border-color: #fd5f00;
+    box-shadow: 0 0 6px rgba(253, 95, 0, 0.2); }
   input[type=text]:focus {
-    border-color: #5f8ee4;
-    box-shadow: 0 0 6px rgba(95, 142, 228, 0.2); }
+    border-color: #53fdff;
+    box-shadow: 0 0 6px rgba(83, 253, 255, 0.2); }
 
 input[type=radio],
 input[type=checkbox] {
@@ -210,7 +210,7 @@ input[type=checkbox] {
   .radio-label::before,
   .checkbox-label::before {
     left: 0;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #ffffff;
     box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03); }
   .radio-label::after,
   .checkbox-label::after {
@@ -226,7 +226,7 @@ input[type=checkbox] {
 
 input[type=radio]:checked + label::before,
 input[type=checkbox]:checked + label::before {
-  background-color: #19191a;
+  background-color: #000000;
   border: none;
   box-shadow: none; }
 
@@ -644,29 +644,29 @@ section {
   display: block;
   padding: .6em 0; }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
-  background: #5f8ee4; }
+  background: #53fdff; }
   .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
-    background: #759de8; }
+    background: #6dfdff; }
   .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
-    background: #497fe0; }
+    background: #3afdff; }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
-  background: #19191a; }
+  background: #000000; }
   .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
-    background: #262627; }
-  .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
     background: #0d0d0d; }
+  .cd-colors li:nth-of-type(2) .cd-color-swatch::after {
+    background: black; }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-  background: #e4655f; }
+  background: #fd5f00; }
   .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-    background: #e87a75; }
+    background: #ff6e18; }
   .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-    background: #e05049; }
+    background: #e45500; }
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
-  background: #e6e6e6; }
+  background: #ffffff; }
   .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
-    background: #f3f3f3; }
+    background: white; }
   .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
-    background: #d9d9d9; }
+    background: #f2f2f2; }
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
   background: #ffffff; }
   .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
@@ -698,7 +698,7 @@ section {
 /* xTypography section - basic style */
 .cd-typography h1::before {
   content: 'Aa - ';
-  color: #5f8ee4; }
+  color: #53fdff; }
 
 .cd-buttons .cd-box:first-of-type {
   border-bottom-left-radius: 0;
