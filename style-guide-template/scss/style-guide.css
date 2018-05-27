@@ -1,20 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Electrolize");
 @font-face {
-    font-family: "Tron";
-    src: url('/tron-font/tron.ttf');
-}
-
-@import url('https://fonts.googleapis.com/css?family=Electrolize');
-
-/* --------------------------------
-xBackground
--------------------------------- */
+  font-family: 'Tron';
+  src: url("/tron-font/tron.ttf"); }
 body {
   /* this is the page background */
   background-color: #ffffff; }
 
-/* --------------------------------
-xPatterns
--------------------------------- */
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
   border: 1px solid #e6e6e6;
@@ -23,9 +14,6 @@ xPatterns
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   padding: 6px; }
 
-/* --------------------------------
-xNavigation
--------------------------------- */
 header {
   background-color: #19191a; }
 
@@ -79,9 +67,6 @@ header {
       /* right arrow color */
       border-color: #5f8ee4; }
 
-/* --------------------------------
-xPage title
--------------------------------- */
 main > h1 {
   color: #19191a; }
   @media only screen and (min-width: 1600px) {
@@ -89,11 +74,7 @@ main > h1 {
       /* title goes into the header on big devices */
       color: #ffffff; } }
 
-/* --------------------------------
-xTypography
--------------------------------- */
 h1, h2 {
-  font-family: "Electrolize", sans-serif;
   color: #19191a; }
 
 h1 {
@@ -133,15 +114,11 @@ p {
       font-size: 1.6rem;
       line-height: 1.6; } }
 
-/* --------------------------------
-xButtons
--------------------------------- */
 .btn {
   border: none;
   box-shadow: none;
   border-radius: .25em;
   font-size: 1.4rem;
-  font-family: "Electrolize", sans-serif;
   color: #ffffff;
   padding: .6em 2.2em;
   cursor: pointer;
@@ -173,17 +150,11 @@ xButtons
   /* CSS class name color */
   color: #5f8ee4; }
 
-/* --------------------------------
-xIcons
--------------------------------- */
 .cd-icons li {
   /* icons size */
   width: 32px;
   height: 32px; }
 
-/* --------------------------------
-xForm
--------------------------------- */
 input[type=text], select {
   border: 1px solid #e6e6e6;
   border-radius: .25em;
@@ -290,7 +261,7 @@ select {
   -o-appearance: none;
   appearance: none; }
 
-/* --------------------------------
+/* -------------------------------- 
 
 xBasic style
 
