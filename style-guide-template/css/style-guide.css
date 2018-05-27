@@ -1,7 +1,5 @@
 /* --------------------------------
-
 xBackground
-
 -------------------------------- */
 
 body {
@@ -10,9 +8,7 @@ body {
 }
 
 /* --------------------------------
-
 xPatterns
-
 -------------------------------- */
 
 .cd-box {
@@ -25,9 +21,7 @@ xPatterns
 }
 
 /* --------------------------------
-
 xNavigation
-
 -------------------------------- */
 
 header {
@@ -112,9 +106,7 @@ header {
 }
 
 /* --------------------------------
-
 xPage title
-
 -------------------------------- */
 
 main > h1 {
@@ -129,9 +121,7 @@ main > h1 {
 }
 
 /* --------------------------------
-
 xTypography
-
 -------------------------------- */
 
 h1,
@@ -196,9 +186,7 @@ p a {
 }
 
 /* --------------------------------
-
 xButtons
-
 -------------------------------- */
 
 .btn {
@@ -260,9 +248,7 @@ xButtons
 }
 
 /* --------------------------------
-
 xIcons
-
 -------------------------------- */
 
 .cd-icons li {
@@ -272,9 +258,7 @@ xIcons
 }
 
 /* --------------------------------
-
 xForm
-
 -------------------------------- */
 
 input[type=text],
@@ -411,9 +395,7 @@ select {
 }
 
 /* --------------------------------
-
 xBasic style
-
 -------------------------------- */
 
 *,
@@ -853,15 +835,14 @@ section:nth-of-type(6) h2::before {
 
 /*
 .cd-branding ul:last-of-type li:nth-of-type(3) img {
-    width: 32px;
-    height: 32px;
-    border-radius: .4em;
+width: 32px;
+height: 32px;
+border-radius: .4em;
 }
-
 .cd-branding ul:last-of-type li:nth-of-type(4) img {
-    width: 16px;
-    height: 16px;
-    border-radius: .2em;
+width: 16px;
+height: 16px;
+border-radius: .2em;
 }
 */
 
@@ -973,15 +954,14 @@ section:nth-of-type(6) h2::before {
 }
 
 /*
-
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
-  background: #ffffff;
+background: #ffffff;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
-  background: white;
+background: white;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
-  background: #f2f2f2;
+background: #f2f2f2;
 }
 */
 
