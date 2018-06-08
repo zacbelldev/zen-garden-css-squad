@@ -1,0 +1,64 @@
+//body
+//  header
+//  content
+//    leftDiv
+//      leftDivContent
+//    rightDiv
+//      rightDivContent
+
+//1vh = 1% of viewport height.
+$headerHeight: 15vh;
+$headerWidth: 100vw;
+$contentHeight: 100vh - $headerHeight;
+$contentWidth: 100vh;
+
+$leftDivWidth: 65%;
+$leftDivHeight: 100%;
+$leftDivContentWidth: 100%;
+$leftDivContentHeight: 100%;
+
+$rightDivWidth: 100% - $leftDivWidth;
+$rightDivHeight: 100%;
+$rightDivContentWidth: 100%;
+$rightDivContentHeight: 100%;
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+  height: $headerHeight;
+  width: $headerWidth;
+}
+
+#content {
+    display: flex;
+    height: $contentHeight;
+    width: $contentWidth;
+}
+
+#leftDiv {
+    width: $leftDivWidth;
+    height: $leftDivHeight;
+}
+
+#leftDivContent {
+    width: $leftDivContentWidth;
+    height: $leftDivContentHeight;
+    overflow-y: scroll;
+}
+
+#rightDiv {
+    width: $rightDivWidth;
+    height: $rightDivHeight;
+}
+
+#rightDivContent {
+    width: $rightDivContentWidth;
+    height: $rightDivContentHeight;
+    overflow-y: scroll;
+}
