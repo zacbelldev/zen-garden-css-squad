@@ -20,16 +20,19 @@ html, body {
   width: 100vw;
   background-color: #000000; }
 
+.intro {
+  display: none; }
+
 #zen-supporting {
   height: 40vh;
-  overflow-y: scroll;
+  overflow: scroll;
   padding-left: 1em;
   padding-right: 1em;
   margin-bottom: 2em; }
 
 .sidebar {
   height: 40vh;
-  overflow-y: scroll;
+  overflow: scroll;
   padding-left: 1em;
   padding-right: 1em;
   margin-bottom: 2em; }
