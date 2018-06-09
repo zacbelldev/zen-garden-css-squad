@@ -12,14 +12,12 @@
 
 //MOBILE FIRST
 // -------------------------------COLORS
-
 $tronBlue: #53fdff;
 $black: #000000;
 $tronOrange: #fd5f00;
 $white: #ffffff;
 
 // -------------------------------FONTS
-
 @font-face {
     font-family: 'Tron';
     src: url('/tron-font/tron.ttf');
@@ -30,13 +28,10 @@ $tronFont: 'Tron', sans-serif;
 $electroFont: 'Electrolize', sans-serif;
 
 // -------------------------------MIX-INS
-
 @mixin scrolling(){
     height: 40vh;
     overflow-y: scroll;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-bottom: 2em;
+    padding: 2.5em;
 }
 
 // -------------------------------GENERAL STYLES
@@ -75,6 +70,11 @@ html, body  {
     @include scrolling();
 }
 
-// TABLET FIRST
-
-// DESKTOP FIRST
+// DESKTOP
+@media screen and (min-width: 500px){
+    body #zen-supporting, .sidebar{
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+    }
+}

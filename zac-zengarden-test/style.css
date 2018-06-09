@@ -23,25 +23,18 @@ html, body {
   margin: 0;
   padding: 0; }
 
-<<<<<<< HEAD
 .intro {
   display: none; }
 
-#zen-supporting {
-  height: 40vh;
-  overflow: scroll;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-bottom: 2em; }
-
-.sidebar {
-=======
 #zen-supporting, .sidebar {
->>>>>>> b8f819e39eec21f692816d4551b5eb0a09a0d799
   height: 40vh;
-  overflow: scroll;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-bottom: 2em; }
+  overflow-y: scroll;
+  padding: 2.5em; }
+
+@media screen and (min-width: 500px) {
+  body #zen-supporting, .sidebar {
+    display: flex;
+    flex-direction: row;
+    width: 60%; } }
 
 /*# sourceMappingURL=style.css.map */
