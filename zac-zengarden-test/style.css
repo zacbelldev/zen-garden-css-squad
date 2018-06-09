@@ -2,5 +2,22 @@
 @font-face {
   font-family: 'Tron';
   src: url("/tron-font/tron.ttf"); }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #53fdff;
+  font-family: "Tron", sans-serif; }
+
+p, a {
+  color: #fd5f00;
+  font-family: "Electrolize", sans-serif; }
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000; }
 
 /*# sourceMappingURL=style.css.map */

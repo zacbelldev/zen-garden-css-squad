@@ -28,7 +28,26 @@ $tronFont: 'Tron', sans-serif;
 $electroFont: 'Electrolize', sans-serif;
 
 
+h1,
+h2,
+h3,
+h4, 
+h5, 
+h6 {
+    color: $tronBlue;
+    font-family: $tronFont;
+}
 
+p, a {
+    color: $tronOrange;
+    font-family: $electroFont;
+}
+
+html, body  {
+    height: 100vh;
+    width: 100vw;
+    background-color: $black;
+}
 
 
 // TABLET FIRST
