@@ -60,6 +60,9 @@ html, body  {
     height: 100vh;
     width: 100vw;
     background-color: $black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .intro{
@@ -68,11 +71,7 @@ html, body  {
 
 // -------------------------------SCROLLING SECTIONS
 
-#zen-supporting{
-    @include scrolling();
-}
-
-.sidebar{
+#zen-supporting, .sidebar{
     @include scrolling();
 }
 

@@ -18,8 +18,12 @@ p, a {
 html, body {
   height: 100vh;
   width: 100vw;
-  background-color: #000000; }
+  background-color: #000000;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
+<<<<<<< HEAD
 .intro {
   display: none; }
 
@@ -31,6 +35,9 @@ html, body {
   margin-bottom: 2em; }
 
 .sidebar {
+=======
+#zen-supporting, .sidebar {
+>>>>>>> b8f819e39eec21f692816d4551b5eb0a09a0d799
   height: 40vh;
   overflow: scroll;
   padding-left: 1em;
