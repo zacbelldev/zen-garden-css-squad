@@ -12,12 +12,14 @@
 
 //MOBILE FIRST
 // -------------------------------COLORS
+
 $tronBlue: #53fdff;
 $black: #000000;
 $tronOrange: #fd5f00;
 $white: #ffffff;
 
 // -------------------------------FONTS
+
 @font-face {
     font-family: 'Tron';
     src: url('/tron-font/tron.ttf');
@@ -68,10 +70,8 @@ html, body  {
 
 .sidebar{
     @include scrolling();
-
+}
 
 // TABLET FIRST
-
-
 
 // DESKTOP FIRST

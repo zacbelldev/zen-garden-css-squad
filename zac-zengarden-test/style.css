@@ -2,21 +2,6 @@
 @font-face {
   font-family: 'Tron';
   src: url("/tron-font/tron.ttf"); }
-<<<<<<< HEAD
-#zen-supporting {
-  height: 40vh;
-  overflow-y: scroll;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-bottom: 2em; }
-
-.sidebar {
-  height: 40vh;
-  overflow-y: scroll;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-bottom: 2em; }
-=======
 h1,
 h2,
 h3,
@@ -34,6 +19,19 @@ html, body {
   height: 100vh;
   width: 100vw;
   background-color: #000000; }
->>>>>>> b7d7e6a6d855503f4b019573fee3e58111ffa1a8
+
+#zen-supporting {
+  height: 40vh;
+  overflow-y: scroll;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 2em; }
+
+.sidebar {
+  height: 40vh;
+  overflow-y: scroll;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 2em; }
 
 /*# sourceMappingURL=style.css.map */
