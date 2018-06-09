@@ -27,7 +27,25 @@ $white: #ffffff;
 $tronFont: 'Tron', sans-serif;
 $electroFont: 'Electrolize', sans-serif;
 
+// -------------------------------MIX-INS
 
+@mixin scrolling(){
+    height: 40vh;
+    overflow-y: scroll;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 2em;
+}
+
+// -------------------------------SCROLLING SECTIONS
+
+#zen-supporting{
+    @include scrolling();
+}
+
+.sidebar{
+    @include scrolling();
+}
 
 
 
