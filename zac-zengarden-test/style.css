@@ -2,6 +2,7 @@
 @font-face {
   font-family: 'Tron';
   src: url("/tron-font/tron.ttf"); }
+<<<<<<< HEAD
 #zen-supporting {
   height: 40vh;
   overflow-y: scroll;
@@ -15,5 +16,24 @@
   padding-left: 1em;
   padding-right: 1em;
   margin-bottom: 2em; }
+=======
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #53fdff;
+  font-family: "Tron", sans-serif; }
+
+p, a {
+  color: #fd5f00;
+  font-family: "Electrolize", sans-serif; }
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000; }
+>>>>>>> b7d7e6a6d855503f4b019573fee3e58111ffa1a8
 
 /*# sourceMappingURL=style.css.map */

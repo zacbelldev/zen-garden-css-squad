@@ -37,6 +37,29 @@ $electroFont: 'Electrolize', sans-serif;
     margin-bottom: 2em;
 }
 
+// -------------------------------GENERAL STYLES
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $tronBlue;
+    font-family: $tronFont;
+}
+
+p, a {
+    color: $tronOrange;
+    font-family: $electroFont;
+}
+
+html, body  {
+    height: 100vh;
+    width: 100vw;
+    background-color: $black;
+}
+
 // -------------------------------SCROLLING SECTIONS
 
 #zen-supporting{
@@ -45,8 +68,6 @@ $electroFont: 'Electrolize', sans-serif;
 
 .sidebar{
     @include scrolling();
-}
-
 
 
 // TABLET FIRST
