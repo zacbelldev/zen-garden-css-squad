@@ -6,59 +6,33 @@
 //    rightDiv
 //      rightDivContent
 
-//1vh = 1% of viewport height.
-$headerHeight: 15vh;
-$headerWidth: 100vw;
-$contentHeight: 100vh - $headerHeight;
-$contentWidth: 100vh;
+// 1vh = 1% of viewport height.
+// overflow-y: scroll;
 
-$leftDivWidth: 65%;
-$leftDivHeight: 100%;
-$leftDivContentWidth: 100%;
-$leftDivContentHeight: 100%;
 
-$rightDivWidth: 100% - $leftDivWidth;
-$rightDivHeight: 100%;
-$rightDivContentWidth: 100%;
-$rightDivContentHeight: 100%;
+//MOBILE FIRST
+// -------------------------------COLORS
+$tronBlue: #53fdff;
+$black: #000000;
+$tronOrange: #fd5f00;
+$white: #ffffff;
 
-html, body {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+// -------------------------------FONTS
+@font-face {
+    font-family: 'Tron';
+    src: url('/tron-font/tron.ttf');
 }
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
 
-#header {
-  height: $headerHeight;
-  width: $headerWidth;
-}
+$tronFont: 'Tron', sans-serif;
+$electroFont: 'Electrolize', sans-serif;
 
-#content {
-    display: flex;
-    height: $contentHeight;
-    width: $contentWidth;
-}
 
-#leftDiv {
-    width: $leftDivWidth;
-    height: $leftDivHeight;
-}
 
-#leftDivContent {
-    width: $leftDivContentWidth;
-    height: $leftDivContentHeight;
-    overflow-y: scroll;
-}
 
-#rightDiv {
-    width: $rightDivWidth;
-    height: $rightDivHeight;
-}
 
-#rightDivContent {
-    width: $rightDivContentWidth;
-    height: $rightDivContentHeight;
-    overflow-y: scroll;
-}
+// TABLET FIRST
+
+
+
+// DESKTOP FIRST
