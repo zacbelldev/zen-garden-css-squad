@@ -2,9 +2,13 @@
 * {
   font-family: 'Encode Sans Semi Expanded', sans-serif; }
 
-.win ul li {
-  display: grid;
-  grid-template-columns: 50%;
+#topSection
+{
+    display: grid;
+      grid-template-columns: 50% 50%;
+}
+
+#topSection ul li {
   list-style-type: none;
   font-size: 6em; }
 
