@@ -1,22 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded');
+@import 'partials/generalStyles';
 
-*{
-    font-family: 'Encode Sans Semi Expanded', sans-serif;
-}
-
-body{
+/*Grid Layout*/
+body {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(3, $smallColumns);
+    grid-template-rows: repeat(12, $smallRows);
+    ul li {
+        list-style: none;
+        text-align: center;
+    }
 }
 
-.win ul li{
-    grid-column: 1/3;
-    list-style-type: none;
-    font-size: 6em;
+.win, .ter {
+    font-size: 10em;
+    z-index: 1;
+    font-weight: bold;
 }
 
-.ter ul li{
-    grid-column: 3/4;
-    list-style-type: none;
-    font-size: 6em;
+.winDesktop, .terDesktop{
+    display: none;
 }
+
+.bold {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1em;
+    text-align: center;
+}
+
+@import 'partials/sectionStyling';
+
+/*Large Screen Styles*/
+@import 'partials/desktop';
