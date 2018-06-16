@@ -2,6 +2,25 @@
 /*Variables*/
 /*General Styles*/
 * {
+<<<<<<< HEAD
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+#topSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#topSection ul li {
+        {
+        display: grid;
+        list-style: none;
+        font-size: 4em;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+
+=======
   font-family: 'Encode Sans Semi Expanded', sans-serif;
   padding: 0;
   margin: 0; }
@@ -140,5 +159,6 @@ p {
   .textFour {
     grid-row: 5/6;
     grid-column: 5/6; } }
+>>>>>>> 5c649d5b8288b68e29906c90d1457c2f6ec0c0bc
 
-/*# sourceMappingURL=style.css.map */
+    /*# sourceMappingURL=style.css.map */
