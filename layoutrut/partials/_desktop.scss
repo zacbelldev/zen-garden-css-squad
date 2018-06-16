@@ -1,0 +1,76 @@
+@media screen and (min-width: 750px){
+    /*Desktop Grid Layout*/
+    body {
+        display: grid;
+        grid-template-columns: repeat(6, $bigColumns);
+        grid-template-rows: repeat(8, $bigRows);
+        ul li {
+            list-style: none;
+            text-align: center;
+        }
+    }
+
+    .win, .ter {
+        display: none
+    }
+
+    .winDesktop, .terDesktop{
+        font-size: 10em;
+        z-index: 1;
+        font-weight: bold;
+        display: block;
+        letter-spacing: 30px;
+    }
+
+    /*Sections Gridded*/
+    .winDesktop {
+        grid-row: 3/5;
+        grid-column: 2/3;
+        margin-left: 40px;
+    }
+
+    .pictureOne {
+        grid-row: 6/8;
+        grid-column: 2/3;
+    }
+
+    .textOne {
+        grid-row: 8/9;
+        grid-column: 2/3;
+    }
+
+    .pictureTwo {
+        grid-row: 3/5;
+        grid-column: 3/5;
+    }
+
+    .textTwo {
+        grid-row: 5/6;
+        grid-column: 3/4;
+    }
+
+    .terDesktop {
+        grid-row: 7/9;
+        grid-column: 4/6;
+    }
+
+    .pictureThree {
+        grid-row: 1/3;
+        grid-column: 5/7;
+    }
+
+    .textThree {
+        grid-row: 3/4;
+        grid-column: 5/6;
+    }
+
+    .pictureFour {
+        grid-row: 6/8;
+        grid-column: 5/7;
+    }
+
+    .textFour {
+        grid-row: 5/6;
+        grid-column: 5/6;
+    }
+}
