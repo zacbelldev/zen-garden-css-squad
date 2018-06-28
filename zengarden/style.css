@@ -12,7 +12,7 @@ h6 {
   font-family: "Tron", sans-serif; }
 
 p, a {
-  color: #fd5f00;
+  color: #ffffff;
   font-family: "Electrolize", sans-serif; }
 
 html, body {
@@ -30,6 +30,16 @@ html, body {
   height: 40vh;
   overflow-y: scroll;
   padding: 2.5em; }
+
+.main {
+  position: absolute;
+  top: 15vh;
+  left: 2vw; }
+
+.sidebar {
+  position: absolute;
+  top: 15vh;
+  left: 70vw; }
 
 @media screen and (min-width: 500px) {
   body #zen-supporting, .sidebar {

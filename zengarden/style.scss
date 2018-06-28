@@ -22,6 +22,7 @@ $white: #ffffff;
     font-family: 'Tron';
     src: url('tron.ttf');
 }
+
 @import url('https://fonts.googleapis.com/css?family=Electrolize');
 
 $tronFont: 'Tron', sans-serif;
@@ -29,7 +30,7 @@ $electroFont: 'Electrolize', sans-serif;
 
 // -------------------------------MIX-INS
 @mixin scrolling(){
-    height: 40vh;
+    height: 70vh;
     overflow-y: scroll;
     padding: 2.5em;
 }
@@ -47,7 +48,7 @@ h6 {
 }
 
 p, a {
-    color: $tronOrange;
+    color: $white;
     font-family: $electroFont;
 }
 
@@ -68,8 +69,20 @@ html, body  {
 
 #zen-supporting, .sidebar{
     @include scrolling();
+//    transform: rotateX(60deg);
+//    transform-origin: 50% 100%;
 }
 
+.main {
+    position: absolute;
+    top:15vh;
+    left:2vw;
+}
+.sidebar {
+    position: absolute;
+    top:15vh;
+    left:70vw; 
+}
 // DESKTOP
 @media screen and (min-width: 500px){
     body #zen-supporting, .sidebar{
@@ -78,3 +91,4 @@ html, body  {
         width: 60%;
     }
 }
+
