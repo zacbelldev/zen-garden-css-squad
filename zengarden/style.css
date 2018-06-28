@@ -27,7 +27,7 @@ html, body {
   display: none; }
 
 #zen-supporting, .sidebar {
-  height: 40vh;
+  height: 70vh;
   overflow-y: scroll;
   padding: 2.5em; }
 
