@@ -2,6 +2,17 @@
 @font-face {
   font-family: 'Tron';
   src: url("tron.ttf"); }
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000; }
+
 h1,
 h2,
 h3,
@@ -11,40 +22,114 @@ h6 {
   color: #53fdff;
   font-family: "Tron", sans-serif; }
 
-p, a {
+p {
   color: #ffffff;
   font-family: "Electrolize", sans-serif; }
 
-html, body {
-  height: 100vh;
-  width: 100vw;
-  background-color: #000000;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+a {
+  color: #ffffff;
+  font-family: "Electrolize", sans-serif; }
 
 .intro {
-  display: none; }
+  margin: 20px;
+  font-size: 10px; }
 
-#zen-supporting, .sidebar {
-  height: 70vh;
-  overflow-y: scroll;
-  padding: 2.5em; }
-
-.main {
+#zen-supporting {
   position: absolute;
-  top: 15vh;
-  left: 2vw; }
+  top: 30vh;
+  left: 25vw;
+  height: 100%;
+  width: 80%; }
 
 .sidebar {
   position: absolute;
-  top: 15vh;
-  left: 70vw; }
+  top: 30vh;
+  left: 55vw;
+  height: 100%;
+  width: 80%; }
 
-@media screen and (min-width: 500px) {
-  body #zen-supporting, .sidebar {
-    display: flex;
-    flex-direction: row;
-    width: 60%; } }
+#zen-supporting {
+  animation: float 5s infinite; }
+
+@keyframes float {
+  60% {
+    transform: translateY(-30px); } }
+#zen-supporting div,
+#zen-supporting footer {
+  background: black;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  overflow-y: scroll;
+  position: relative;
+  box-shadow: 10px 10px 50px 20px rgba(83, 253, 255, 0.35);
+  transition: all 0.3s ease-out;
+  padding: 15px;
+  text-align: center; }
+
+#zen-supporting div:hover,
+#zen-supporting footer:hover {
+  z-index: 11;
+  box-shadow: 10px 10px 50px 2000px rgba(83, 253, 255, 0.35);
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  transform-origin: 100% 100%; }
+
+#zen-supporting div:hover > .aside {
+  display: none; }
+
+#zen-explanation {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(0);
+  z-index: 10; }
+
+#zen-explanation:hover {
+  transform: translateY(0) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2); }
+
+#zen-participation {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(250px);
+  z-index: 9; }
+
+#zen-participation:hover {
+  transform: translateY(-250px) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2); }
+
+#zen-benefits {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(500px);
+  z-index: 8; }
+
+#zen-benefits:hover {
+  transform: translateY(-500px) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2); }
+
+#zen-requirements {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(750px);
+  z-index: 7; }
+
+#zen-requirements:hover {
+  transform: translateY(-600px) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2); }
+
+footer {
+  transform: rotateX(45deg) rotateZ(45deg) translateZ(1000px);
+  z-index: 6; }
+
+footer:hover {
+  transform: translateY(-700px) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2); }
+
+.sidebar div div h3 {
+  text-shadow: 0 0 5px #ffffff;
+  animation: flicker 2s infinite alternate; }
+
+@keyframes flicker {
+  20%, 24%, 75% {
+    text-shadow: none; } }
+.sidebar div div {
+  margin-bottom: 20px; }
+
+.design-name {
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 1.2em; }
+
+.designer-name {
+  text-align: right; }
 
 /*# sourceMappingURL=style.css.map */
