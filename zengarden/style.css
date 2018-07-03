@@ -37,16 +37,14 @@ a {
 #zen-supporting {
   position: absolute;
   top: 30vh;
-  left: 25vw;
+  left: 15vw;
   height: 100%;
   width: 80%; }
 
 .sidebar {
   position: absolute;
   top: 30vh;
-  left: 55vw;
-  height: 100%;
-  width: 80%; }
+  left: 55vw; }
 
 #zen-supporting {
   animation: float 5s infinite; }
@@ -115,7 +113,7 @@ footer:hover {
   transform: translateY(-700px) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2); }
 
 .sidebar div div h3 {
-  text-shadow: 0 0 5px #ffffff;
+  text-shadow: 0 0 10px #ffffff;
   animation: flicker 2s infinite alternate; }
 
 @keyframes flicker {
