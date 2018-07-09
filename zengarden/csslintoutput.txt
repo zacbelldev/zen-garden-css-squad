@@ -1,0 +1,177 @@
+
+
+csslint: There are 35 problems in /Users/zacbell/Documents/GitHub/zen-garden-css-squad/zengarden/style.css.
+
+style.css
+1: warning at line 1, col 1
+@import prevents parallel downloads, use <link> instead.
+@import url("https://fonts.googleapis.com/css?family=Electrolize");
+
+style.css
+2: warning at line 4, col 3
+@font-face declaration doesn't follow the fontspring bulletproof syntax.
+  src: url("tron.ttf"); }
+
+style.css
+3: warning at line 5, col 1
+Rule doesn't have all its properties in alphabetical order.
+* {
+
+style.css
+4: warning at line 5, col 1
+The universal selector (*) is known to be slow.
+* {
+
+style.css
+5: warning at line 9, col 3
+The box-sizing property isn't supported in IE6 and IE7.
+  box-sizing: border-box; }
+
+style.css
+6: warning at line 11, col 1
+Rule doesn't have all its properties in alphabetical order.
+html, body {
+
+style.css
+7: warning at line 33, col 1
+Rule doesn't have all its properties in alphabetical order.
+.intro {
+
+style.css
+8: warning at line 37, col 1
+Don't use IDs in selectors.
+#zen-supporting {
+
+style.css
+9: warning at line 37, col 1
+Rule doesn't have all its properties in alphabetical order.
+#zen-supporting {
+
+style.css
+10: warning at line 44, col 1
+Rule doesn't have all its properties in alphabetical order.
+.sidebar {
+
+style.css
+11: warning at line 51, col 1
+Don't use IDs in selectors.
+#zen-supporting {
+
+style.css
+12: warning at line 57, col 1
+Rule doesn't have all its properties in alphabetical order.
+#zen-supporting div,
+
+style.css
+13: warning at line 57, col 1
+Don't use IDs in selectors.
+#zen-supporting div,
+
+style.css
+14: warning at line 58, col 1
+Don't use IDs in selectors.
+#zen-supporting footer {
+
+style.css
+15: warning at line 67, col 3
+Using height with padding can sometimes make elements larger than you expect.
+  padding: 15px;
+
+style.css
+16: warning at line 67, col 3
+Using width with padding can sometimes make elements larger than you expect.
+  padding: 15px;
+
+style.css
+17: warning at line 70, col 1
+Don't use IDs in selectors.
+#zen-supporting div:hover,
+
+style.css
+18: warning at line 70, col 1
+Rule doesn't have all its properties in alphabetical order.
+#zen-supporting div:hover,
+
+style.css
+19: warning at line 71, col 1
+Don't use IDs in selectors.
+#zen-supporting footer:hover {
+
+style.css
+20: warning at line 76, col 3
+Using width with padding can sometimes make elements larger than you expect.
+  padding: 10px;
+
+style.css
+21: warning at line 76, col 3
+Using height with padding can sometimes make elements larger than you expect.
+  padding: 10px;
+
+style.css
+22: warning at line 79, col 1
+Don't use IDs in selectors.
+#zen-supporting div:hover > .aside {
+
+style.css
+23: warning at line 82, col 1
+Don't use IDs in selectors.
+#zen-explanation {
+
+style.css
+24: warning at line 86, col 1
+Don't use IDs in selectors.
+#zen-explanation:hover {
+
+style.css
+25: warning at line 89, col 1
+Don't use IDs in selectors.
+#zen-participation {
+
+style.css
+26: warning at line 93, col 1
+Don't use IDs in selectors.
+#zen-participation:hover {
+
+style.css
+27: warning at line 96, col 1
+Don't use IDs in selectors.
+#zen-benefits {
+
+style.css
+28: warning at line 100, col 1
+Don't use IDs in selectors.
+#zen-benefits:hover {
+
+style.css
+29: warning at line 103, col 1
+Don't use IDs in selectors.
+#zen-requirements {
+
+style.css
+30: warning at line 107, col 1
+Don't use IDs in selectors.
+#zen-requirements:hover {
+
+style.css
+31: warning at line 117, col 18
+Heading (h3) should not be qualified.
+.sidebar div div h3 {
+
+style.css
+32: warning at line 117, col 18
+Heading (h3) has already been defined.
+.sidebar div div h3 {
+
+style.css
+33: warning at line 117, col 1
+Rule doesn't have all its properties in alphabetical order.
+.sidebar div div h3 {
+
+style.css
+34: warning at line 127, col 1
+Rule doesn't have all its properties in alphabetical order.
+.design-name {
+
+style.css
+35: warning
+You have 2 h3s defined in this stylesheet.
