@@ -36,6 +36,7 @@ a {
   font-size: 10px; }
 
 #zen-supporting {
+<<<<<<< HEAD
     position: absolute;
     top: 30vh;
     left: 25vw;
@@ -44,13 +45,18 @@ a {
     -webkit-animation: float 5s infinite;
     animation: float 5s infinite;
 }
+=======
+  position: absolute;
+  top: 30vh;
+  left: 15vw;
+  height: 100%;
+  width: 80%; }
+>>>>>>> daaa6289397898d61eff1d86d771f9cd026046b5
 
 .sidebar {
   position: absolute;
   top: 30vh;
-  left: 55vw;
-  height: 100%;
-  width: 80%; }
+  left: 55vw; }
 
 @-webkit-keyframes float {
   60% {
@@ -136,8 +142,12 @@ footer:hover {
   transform: translateY(-700px) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2); }
 
 .sidebar div div h3 {
+<<<<<<< HEAD
   text-shadow: 0 0 5px #ffffff;
   -webkit-animation: flicker 2s infinite alternate;
+=======
+  text-shadow: 0 0 10px #ffffff;
+>>>>>>> daaa6289397898d61eff1d86d771f9cd026046b5
   animation: flicker 2s infinite alternate; }
 
 @-webkit-keyframes flicker {

@@ -23,13 +23,13 @@ $htmlBodyBackgroundColor: $black;
 
 $headingColor: $tronBlue;
 $headingFont: $tronFont;
- 
+
 $paragraphColor: $white;
 $paragraphFont: $electroFont;
 
 $linkColor: $white;
 $linkFont: $electroFont;
-   
+
 @import 'partials/generalStyles';
 
 
@@ -46,7 +46,7 @@ $linkFont: $electroFont;
 #zen-supporting {
     position: absolute;
     top: 30vh;
-    left: 25vw;
+    left: 15vw;
     height: 100%;
     width: 80%;
 }
@@ -56,10 +56,8 @@ $linkFont: $electroFont;
     position: absolute;
     top: 30vh;
     left: 55vw;
-    height: 100%;
-    width: 80%;
 }
- 
+
 
 
 // -------------------------------LEFT SECTION 3D LAYER EFFECTS
@@ -68,12 +66,12 @@ $linkFont: $electroFont;
 }
 
 @keyframes float {
-    60% {        
+    60% {
         transform: translateY(-30px);
-    }    
+    }
 }
 
-#zen-supporting div, 
+#zen-supporting div,
 #zen-supporting footer {
     background: black;
     height: 250px;
@@ -159,15 +157,48 @@ footer:hover {
 
 
 // -------------------------------RIGHT SECTION STYLES
+
+//.sidebar {
+//    overflow: hidden;
+//    animation: scroll 5s infinite alternate;
+//}
+//
+//@keyframes scroll {
+//    10% {
+//        margin-top: -1em;
+//    }
+//    20% {
+//        margin-top: -2em;
+//    }
+//    30% {
+//        margin-top: -3em;
+//    }
+//    40% {
+//        margin-top: -4em;
+//    }
+//    50% {
+//        margin-top: -5em;
+//    }
+//    60% {
+//        margin-top: -6em;
+//    }
+//    70% {
+//        margin-top: -7em;
+//    }
+//    80% {
+//        margin-top: -8em;
+//    }
+//}
+
 .sidebar div div h3 {
-    text-shadow: 0 0 5px $white;
+    text-shadow: 0 0 10px $white;
     animation: flicker 2s infinite alternate;
 }
 
 @keyframes flicker {
-    20%, 24%, 75% {        
+    20%, 24%, 75% {
         text-shadow: none;
-    }    
+    }
 }
 
 .sidebar div div {
