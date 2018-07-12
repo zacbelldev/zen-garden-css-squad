@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: $defaultTextColor;
+    box-sizing: border-box;
+}
+
+html, body  {
+    height: 100vh;
+    width: 100vw;
+    background-color: $htmlBodyBackgroundColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $headingColor;
+    font-family: $headingFont;
+}
+
+p {
+    color: $paragraphColor;
+    font-family: $paragraphFont;
+}
+
+a {
+    color: $linkColor;
+    font-family: $linkFont;
+}

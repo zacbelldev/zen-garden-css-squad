@@ -1,80 +1,226 @@
-//body
-//  header
-//  content
-//    leftDiv
-//      leftDivContent
-//    rightDiv
-//      rightDivContent
+// -------------------------------CSS ZEN GARDEN BY THE LEGENDARY CSS SQUAD---------------------------------------------------------------
 
-// 1vh = 1% of viewport height.
-// overflow-y: scroll;
+// -------------------------------FONTS / COLORS
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
 
+@font-face {
+    font-family: 'Tron';
+    src: url('tron.ttf');
+}
 
-//MOBILE FIRST
-// -------------------------------COLORS
+$tronFont: 'Tron', sans-serif;
+$electroFont: 'Electrolize', sans-serif;
 $tronBlue: #53fdff;
 $black: #000000;
 $tronOrange: #fd5f00;
 $white: #ffffff;
 
-// -------------------------------FONTS
-@font-face {
-    font-family: 'Tron';
-    src: url('tron.ttf');
-}
-@import url('https://fonts.googleapis.com/css?family=Electrolize');
 
-$tronFont: 'Tron', sans-serif;
-$electroFont: 'Electrolize', sans-serif;
 
-// -------------------------------MIX-INS
-@mixin scrolling(){
-    height: 40vh;
-    overflow-y: scroll;
-    padding: 2.5em;
-}
+// -------------------------------FONTS / COLORS ASSIGNED
+$defaultTextColor: $white;
+$htmlBodyBackgroundColor: $black;
 
-// -------------------------------GENERAL STYLES
+$headingColor: $tronBlue;
+$headingFont: $tronFont;
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: $tronBlue;
-    font-family: $tronFont;
-}
+$paragraphColor: $white;
+$paragraphFont: $electroFont;
 
-p, a {
-    color: $tronOrange;
-    font-family: $electroFont;
-}
+$linkColor: $white;
+$linkFont: $electroFont;
 
-html, body  {
-    height: 100vh;
-    width: 100vw;
-    background-color: $black;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import 'partials/generalStyles';
 
+
+
+// -------------------------------SECTIONS
+//TOP SECTION
 .intro{
+//    display: none;
+    margin: 20px;
+    font-size:10px;
+}
+
+//LEFT SECTION
+#zen-supporting {
+    position: absolute;
+    top: 30vh;
+    left: 15vw;
+    height: 100%;
+    width: 80%;
+}
+
+//RIGHT SECTION
+.sidebar {
+    position: absolute;
+    top: 30vh;
+    left: 55vw;
+}
+
+
+
+// -------------------------------LEFT SECTION 3D LAYER EFFECTS
+#zen-supporting {
+    animation: float 5s infinite;
+}
+
+@keyframes float {
+    60% {
+        transform: translateY(-30px);
+    }
+}
+
+#zen-supporting div,
+#zen-supporting footer {
+    background: black;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: relative;
+    box-shadow: 10px 10px 50px 20px rgba(83, 253, 255, 0.35);
+    transition: all 0.3s ease-out;
+    padding: 15px;
+    text-align: center;
+}
+
+#zen-supporting div:hover,
+#zen-supporting footer:hover {
+    z-index: 11;
+    box-shadow: 10px 10px 50px 2000px rgba(83, 253, 255, 0.35);
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    transform-origin: 100% 100%;
+}
+
+#zen-supporting div:hover > .aside {
     display: none;
 }
 
-// -------------------------------SCROLLING SECTIONS
 
-#zen-supporting, .sidebar{
-    @include scrolling();
+// ---- ZEN EXPLANATION
+#zen-explanation {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(0);
+    z-index:10;
 }
 
-// DESKTOP
-@media screen and (min-width: 500px){
-    body #zen-supporting, .sidebar{
-        display: flex;
-        flex-direction: row;
-        width: 60%;
+#zen-explanation:hover {
+    transform: translateY(0) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2);
+}
+
+
+// ---- ZEN PARTICIPATION
+#zen-participation {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(250px);
+    z-index:9;
+}
+
+#zen-participation:hover {
+    transform: translateY(-250px) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2);
+}
+
+
+// ---- ZEN BENEFITS
+#zen-benefits {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(500px);
+    z-index:8;
+}
+
+#zen-benefits:hover {
+    transform: translateY(-500px) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2);
+}
+
+
+// ---- ZEN REQUIREMENTS
+#zen-requirements {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(750px);
+    z-index:7;
+}
+
+#zen-requirements:hover {
+    transform: translateY(-600px) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2);
+}
+
+
+// ---- FOOTER
+footer {
+    transform: rotateX(45deg) rotateZ(45deg) translateZ(1000px);
+    z-index:6;
+}
+
+footer:hover {
+    transform: translateY(-700px) rotateX(20deg) rotateZ(0deg) translateZ(0) scale(1.2);
+}
+
+
+
+// -------------------------------RIGHT SECTION STYLES
+
+//.sidebar {
+//    overflow: hidden;
+//    animation: scroll 5s infinite alternate;
+//}
+//
+//@keyframes scroll {
+//    10% {
+//        margin-top: -1em;
+//    }
+//    20% {
+//        margin-top: -2em;
+//    }
+//    30% {
+//        margin-top: -3em;
+//    }
+//    40% {
+//        margin-top: -4em;
+//    }
+//    50% {
+//        margin-top: -5em;
+//    }
+//    60% {
+//        margin-top: -6em;
+//    }
+//    70% {
+//        margin-top: -7em;
+//    }
+//    80% {
+//        margin-top: -8em;
+//    }
+//}
+
+.sidebar div div h3 {
+    text-shadow: 0 0 10px $white;
+    animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+    20%, 24%, 75% {
+        text-shadow: none;
     }
 }
+
+.sidebar div div {
+    margin-bottom: 20px;
+}
+.design-name {
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.designer-name {
+    text-align: right;
+}
+
+
+// -------------------------------MEDIA QUERIES
+// DESKTOP
+@media screen and (min-width: 500px){
+
+}
+
+
+
+
