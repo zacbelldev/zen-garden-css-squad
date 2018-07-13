@@ -50,7 +50,7 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   top: 0;
-  left: 280px;
+  left: 270px;
   position: absolute;
   width: 100px;
   height: 50px;
@@ -58,22 +58,14 @@ a {
 
 @keyframes slideFromLeftFlash {
   0% {
-    left: -100vw; }
-  25% {
-    left: -75vw; }
-  50% {
-    left: -25vw; }
+    left: -390px; }
   100% {
     left: 0px; } }
 @keyframes slideFromLeftBiker {
   0% {
-    left: -100vw; }
-  25% {
-    left: -75vw; }
-  50% {
-    left: -25vw; }
+    left: -120px; }
   100% {
-    left: 0; } }
+    left: 270px; } }
 #zen-supporting {
   position: absolute;
   top: 30vh;
