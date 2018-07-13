@@ -30,13 +30,18 @@ a {
   color: #ffffff;
   font-family: "Electrolize", sans-serif; }
 
+#css-zen-garden {
+  background-image: url(/assets/tronbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center; }
+
 .intro {
   margin: 20px;
   font-size: 16px;
-  text-align: right;
   width: 18vw;
   position: absolute;
-  right: 0; }
+  top: 10vh; }
 
 .extra1 {
   background-image: url(/assets/tron-01.png);
@@ -72,25 +77,19 @@ a {
     left: 270px; } }
 #zen-supporting {
   position: absolute;
-  top: 30vh;
-  left: 15vw;
-  height: 100%;
-  width: 80%; }
+  top: 20vh;
+  left: 35vw;
+  height: 100%; }
 
 .sidebar {
   position: absolute;
-  top: 30vh;
-  left: 55vw; }
+  top: 10vh;
+  left: 70vw;
+  margin: 20px; }
 
 .wrapper div ul li {
-  list-style: none; }
-  .wrapper div ul li:before {
-    content: '';
-    list-style-image: url(/assets/trondisk.png);
-    height: 5px;
-    width: 5px;
-    position: absolute;
-    display: block; }
+  list-style: none;
+  list-style-image: url(/assets/trondisk_15px.png); }
 
 #zen-supporting {
   animation: float 5s infinite; }
@@ -175,5 +174,24 @@ footer:hover {
 
 .designer-name {
   text-align: right; }
+
+@media screen and (max-width: 700px) {
+  #css-zen-garden {
+    background-image: url(/assets/tronbg.png);
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+  .intro {
+    width: 100%;
+    top: 5vh; }
+
+  .zen-supporting {
+    left: 20vw;
+    top: 105vh; }
+
+  .sidebar {
+    left: 0vw;
+    top: 190vh;
+    margin: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
