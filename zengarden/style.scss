@@ -35,10 +35,13 @@ $linkFont: $electroFont;
 
 // -------------------------------SECTIONS
 //TOP SECTION
-.intro{
-//    display: none;
+.intro {
     margin: 20px;
-    font-size:10px;
+    font-size: 16px;
+    text-align: right;
+    width: 18vw;
+    position: absolute;
+    right: 0;
 }
 
 .extra1 {
