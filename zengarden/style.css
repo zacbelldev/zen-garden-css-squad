@@ -39,17 +39,41 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   top: 0;
+  left: 0;
   position: absolute;
-  width: 1450px;
-  height: 250px; }
+  width: 290px;
+  height: 50px;
+  animation: slideFromLeftFlash 5s 1; }
 
 .extra2 {
   background-image: url(/assets/tron-02.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 600px;
-  height: 300px; }
+  top: 0;
+  left: 280px;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  animation: slideFromLeftBiker 5s 1; }
 
+@keyframes slideFromLeftFlash {
+  0% {
+    left: -100vw; }
+  25% {
+    left: -75vw; }
+  50% {
+    left: -25vw; }
+  100% {
+    left: 0px; } }
+@keyframes slideFromLeftBiker {
+  0% {
+    left: -100vw; }
+  25% {
+    left: -75vw; }
+  50% {
+    left: -25vw; }
+  100% {
+    left: 0; } }
 #zen-supporting {
   position: absolute;
   top: 30vh;
