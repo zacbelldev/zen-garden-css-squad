@@ -32,7 +32,11 @@ a {
 
 .intro {
   margin: 20px;
-  font-size: 10px; }
+  font-size: 16px;
+  text-align: right;
+  width: 18vw;
+  position: absolute;
+  right: 0; }
 
 .extra1 {
   background-image: url(/assets/tron-01.png);
