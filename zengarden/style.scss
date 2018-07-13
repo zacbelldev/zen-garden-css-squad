@@ -98,7 +98,18 @@ $linkFont: $electroFont;
     left: 55vw;
 }
 
-
+//List Items
+.wrapper div ul li {
+    list-style: none;
+    &:before {
+        content: '';
+        list-style-image: url(/assets/trondisk.png);
+        height: 5px;
+        width: 5px;
+        position: absolute;
+        display: block;
+    }
+}
 
 // -------------------------------LEFT SECTION 3D LAYER EFFECTS
 #zen-supporting {
