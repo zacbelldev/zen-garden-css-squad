@@ -12,7 +12,8 @@ html {
   background-image: url(/assets/tronbg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center; }
+  background-position: bottom center;
+  background-color: black; }
 
 body {
   height: 100vh;
@@ -36,6 +37,9 @@ a {
   color: #ffffff;
   font-family: "Electrolize", sans-serif; }
 
+#zen-preamble > h3 {
+  margin-top: 30px; }
+
 .intro {
   margin: 20px;
   font-size: 15px;
@@ -53,7 +57,7 @@ a {
   position: absolute;
   width: 290px;
   height: 50px;
-  animation: slideFromLeftFlash 5s 1; }
+  animation: slideFromLeftFlash 10s 1; }
 
 .extra2 {
   background-image: url(/assets/tron-02.png);
@@ -64,22 +68,54 @@ a {
   position: absolute;
   width: 100px;
   height: 50px;
-  animation: slideFromLeftBiker 5s 1; }
+  animation: slideFromLeftBiker 10s 1; }
 
 @keyframes slideFromLeftFlash {
   0% {
     left: -390px; }
+  10% {
+    left: -200px; }
+  30% {
+    left: -100px; }
+  40% {
+    left: 0px; }
+  60% {
+    right: -100px; }
+  70% {
+    right: 0px;
+    display: none; }
+  80% {
+    left: -390px;
+    display: block; }
+  90% {
+    left: -200px; }
   100% {
-    left: 0px; } }
+    left: -100px; } }
 @keyframes slideFromLeftBiker {
   0% {
     left: -120px; }
+  10% {
+    left: 0px; }
+  30% {
+    left: 100px; }
+  40% {
+    left: 270px; }
+  60% {
+    right: -100px; }
+  70% {
+    right: 0px;
+    display: none; }
+  80% {
+    left: -120px;
+    display: block; }
+  90% {
+    left: 0px; }
   100% {
-    left: 270px; } }
+    left: 100px; } }
 #zen-supporting {
   position: absolute;
   top: 135px;
-  left: 35vw;
+  left: 38vw;
   height: 560px; }
 
 .sidebar {
@@ -163,7 +199,9 @@ footer:hover {
   animation: flicker 2s infinite alternate; }
 
 @keyframes flicker {
-  20%, 24%, 75% {
+  20%,
+    24%,
+    75% {
     text-shadow: none; } }
 .sidebar div div {
   margin-bottom: 20px; }
@@ -176,18 +214,74 @@ footer:hover {
 .designer-name {
   text-align: right; }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 1400px) {
+  #zen-supporting {
+    left: 40vw; } }
+@media screen and (max-width: 900px) {
   .intro {
-    height: 20vh;
-    overflow: scroll; }
+    height: 225px;
+    overflow: scroll;
+    width: 100%;
+    top: 5%;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #53fdff;
+    z-index: 0;
+    box-shadow: 0px -10px 74px 31px rgba(83, 253, 255, 0.35); }
 
   .zen-supporting {
     left: 20vw;
-    top: 50%; }
+    top: 50%;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #53fdff; }
 
   .sidebar {
-    height: 20vh;
-    bottom: 5vh;
-    overflow: scroll; } }
+    height: 280px;
+    overflow: scroll;
+    left: 0;
+    top: 530px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 20px 20px 40px;
+    border: 1px solid #53fdff;
+    box-shadow: 0px -10px 50px 15px rgba(83, 253, 255, 0.35); }
+
+  #zen-supporting {
+    position: absolute;
+    top: 265px;
+    left: 5px;
+    height: 225px;
+    overflow: hidden;
+    overflow-y: scroll; }
+
+  #zen-supporting {
+    animation: none; }
+
+  #zen-supporting div,
+  #zen-supporting footer {
+    background: none;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    overflow-y: visible;
+    position: relative;
+    box-shadow: none;
+    transition: all 0.3s ease-out;
+    padding: 15px;
+    text-align: center; }
+
+  #zen-participation,
+  #zen-explanation,
+  #zen-benefits,
+  #zen-requirements,
+  footer {
+    transform: none; }
+    #zen-participation:hover,
+    #zen-explanation:hover,
+    #zen-benefits:hover,
+    #zen-requirements:hover,
+    footer:hover {
+      transform: none; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,4 @@
 // -------------------------------CSS ZEN GARDEN BY THE LEGENDARY CSS SQUAD---------------------------------------------------------------
-
 // -------------------------------FONTS / COLORS
 @import url('https://fonts.googleapis.com/css?family=Electrolize');
 
@@ -8,8 +7,10 @@
     src: url('tron.ttf');
 }
 
-$tronFont: 'Tron', sans-serif;
-$electroFont: 'Electrolize', sans-serif;
+$tronFont: 'Tron',
+sans-serif;
+$electroFont: 'Electrolize',
+sans-serif;
 $tronBlue: #53fdff;
 $black: #000000;
 $tronOrange: #fd5f00;
@@ -20,7 +21,6 @@ $white: #ffffff;
 // -------------------------------FONTS / COLORS ASSIGNED
 $defaultTextColor: $white;
 //$htmlBodyBackgroundColor: $black;
-
 $headingColor: $tronBlue;
 $headingFont: $tronFont;
 
@@ -43,14 +43,13 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
-
+    background-color: black;
 }
 
-body  {
+body {
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.68);
-//    background-color: $htmlBodyBackgroundColor;
+    background-color: rgba(0, 0, 0, 0.68); //    background-color: $htmlBodyBackgroundColor;
 }
 
 h1,
@@ -73,6 +72,9 @@ a {
     font-family: $linkFont;
 }
 
+#zen-preamble > h3  {
+    margin-top: 30px;
+}
 
 
 // -------------------------------SECTIONS
@@ -86,7 +88,6 @@ a {
 //    font-size: 2em;
 //    background-color: rgba(255, 255, 255, 0.25);
 //}
-
 .intro {
     margin: 20px;
     font-size: 15px;
@@ -105,7 +106,7 @@ a {
     position: absolute;
     width: 290px;
     height: 50px;
-    animation: slideFromLeftFlash 5s 1;
+    animation: slideFromLeftFlash 10s 1;
 }
 
 .extra2 {
@@ -117,7 +118,7 @@ a {
     position: absolute;
     width: 100px;
     height: 50px;
-    animation: slideFromLeftBiker 5s 1;
+    animation: slideFromLeftBiker 10s 1;
 }
 
 //.extra3 {
@@ -128,26 +129,91 @@ a {
 //    width: 100vw;
 //    height: 80vw;
 //}
-
 @keyframes slideFromLeftFlash {
-    0%   {left: -390px;}
-//    25%  {left: -200px;}
-//    50%  {left: -100px;}
-    100% {left: 0px;}
+    0% {
+        left: -390px;
+    }
+    
+    10% {
+        left: -200px;
+    }
+    
+    30% {
+        left: -100px;
+    }
+    
+    40% {
+        left: 0px;
+    }
+    
+    60% {
+        right: -100px;
+    }
+    
+    70% {
+        right: 0px;
+        display: none;
+    }
+    
+    80% {
+        left: -390px;
+        display: block;
+    }
+    
+    90% {
+        left: -200px;
+    }
+    
+    100% {
+        left: -100px;
+    }
 }
 
 @keyframes slideFromLeftBiker {
-    0%   {left: -120px;}
-//    25%  {left: 0px;}
-//    50%  {left: 100px;}
-    100% {left: 270px;}
+    0% {
+        left: -120px;
+    }
+    
+    10% {
+        left: 0px;
+    }
+    
+    30% {
+        left: 100px;
+    }
+    
+    40% {
+        left: 270px;
+    }
+    
+    60% {
+        right: -100px;
+    }
+    
+    70% {
+        right: 0px;
+        display: none;
+    }
+    
+    80% {
+        left: -120px;
+        display: block;
+    }
+    
+    90% {
+        left: 0px;
+    }
+    
+    100% {
+        left: 100px;
+    }
 }
 
 //LEFT SECTION
 #zen-supporting {
     position: absolute;
     top: 135px;
-    left: 35vw;
+    left: 38vw;
     height: 560px;
 }
 
@@ -208,7 +274,7 @@ a {
 // ---- ZEN EXPLANATION
 #zen-explanation {
     transform: rotateX(45deg) rotateZ(45deg) translateZ(0);
-    z-index:10;
+    z-index: 10;
 }
 
 #zen-explanation:hover {
@@ -219,7 +285,7 @@ a {
 // ---- ZEN PARTICIPATION
 #zen-participation {
     transform: rotateX(45deg) rotateZ(45deg) translateZ(250px);
-    z-index:9;
+    z-index: 9;
 }
 
 #zen-participation:hover {
@@ -230,7 +296,7 @@ a {
 // ---- ZEN BENEFITS
 #zen-benefits {
     transform: rotateX(45deg) rotateZ(45deg) translateZ(500px);
-    z-index:8;
+    z-index: 8;
 }
 
 #zen-benefits:hover {
@@ -241,7 +307,7 @@ a {
 // ---- ZEN REQUIREMENTS
 #zen-requirements {
     transform: rotateX(45deg) rotateZ(45deg) translateZ(750px);
-    z-index:7;
+    z-index: 7;
 }
 
 #zen-requirements:hover {
@@ -252,7 +318,7 @@ a {
 // ---- FOOTER
 footer {
     transform: rotateX(45deg) rotateZ(45deg) translateZ(1000px);
-    z-index:6;
+    z-index: 6;
 }
 
 footer:hover {
@@ -262,7 +328,6 @@ footer:hover {
 
 
 // -------------------------------RIGHT SECTION STYLES
-
 //.sidebar {
 //    overflow: hidden;
 //    animation: scroll 5s infinite alternate;
@@ -294,14 +359,15 @@ footer:hover {
 //        margin-top: -8em;
 //    }
 //}
-
 .sidebar div div h3 {
     text-shadow: 0 0 10px $white;
     animation: flicker 2s infinite alternate;
 }
 
 @keyframes flicker {
-    20%, 24%, 75% {
+    20%,
+    24%,
+    75% {
         text-shadow: none;
     }
 }
@@ -309,6 +375,7 @@ footer:hover {
 .sidebar div div {
     margin-bottom: 20px;
 }
+
 .design-name {
     font-weight: bolder;
     text-decoration: none;
@@ -321,26 +388,82 @@ footer:hover {
 
 
 // -------------------------------MEDIA QUERIES
+@media screen and (min-width: 1400px) {
+    #zen-supporting {
+        left: 40vw;
+    }
+}
+
 // MOBILE
-@media screen and (max-width: 700px){
+@media screen and (max-width: 900px) {
 
     .intro {
-        height: 20vh;
+        height: 225px;
         overflow: scroll;
+        width: 100%;
+        top: 5%;
+        margin: 0;
+        padding: 20px;
+        border: 1px solid $tronBlue;
+        z-index: 0;
+        box-shadow: 0px -10px 74px 31px rgba(83, 253, 255, 0.35);
     }
 
     .zen-supporting {
         left: 20vw;
         top: 50%;
+        margin: 0;
+        padding: 20px;
+        border: 1px solid $tronBlue;
     }
 
     .sidebar {
-        height: 20vh;
+        height: 280px;
         overflow: scroll;
+        left: 0;
+        top: 530px;
+        width: 100%;
+        margin: 0;
+        padding: 20px 20px 20px 40px;
+        border: 1px solid $tronBlue;
+        box-shadow: 0px -10px 50px 15px rgba(83, 253, 255, 0.35);
     }
 
+    #zen-supporting {
+        position: absolute;
+        top: 265px;
+        left: 5px;
+        height: 225px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    #zen-supporting {
+        animation: none;
+    }
+
+    #zen-supporting div,
+    #zen-supporting footer {
+        background: none;
+        height: auto;
+        width: auto;
+        overflow: visible;
+        overflow-y: visible;
+        position: relative;
+        box-shadow: none;
+        transition: all 0.3s ease-out;
+        padding: 15px;
+        text-align: center;
+    }
+
+    #zen-participation,
+    #zen-explanation,
+    #zen-benefits,
+    #zen-requirements,
+    footer {
+        transform: none;
+        &:hover {
+            transform: none;
+        }
+    }
 }
-
-
-
-
