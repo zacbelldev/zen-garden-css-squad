@@ -177,22 +177,17 @@ footer:hover {
   text-align: right; }
 
 @media screen and (max-width: 700px) {
-  #css-zen-garden {
-    background-image: url(/assets/tronbg.png);
-    background-repeat: no-repeat;
-    background-size: contain; }
-
   .intro {
-    width: 100%;
-    top: 5vh; }
+    height: 20vh;
+    overflow: scroll; }
 
   .zen-supporting {
     left: 20vw;
-    top: 105vh; }
+    top: 50%; }
 
   .sidebar {
-    left: 0vw;
-    top: 190vh;
-    margin: 30px; } }
+    height: 20vh;
+    bottom: 5vh;
+    overflow: scroll; } }
 
 /*# sourceMappingURL=style.css.map */

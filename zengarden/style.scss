@@ -43,7 +43,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
-    
+
 }
 
 body  {
@@ -323,30 +323,20 @@ footer:hover {
 // -------------------------------MEDIA QUERIES
 // MOBILE
 @media screen and (max-width: 700px){
-    #css-zen-garden {
-        background-image: url(/assets/tronbg.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
 
     .intro {
-        width: 100%;
-        top: 5vh;
+        height: 20vh;
+        overflow: scroll;
     }
 
     .zen-supporting {
         left: 20vw;
-        top: 105vh;
+        top: 50%;
     }
 
     .sidebar {
-        left: 0vw;
-        top: 190vh;
-        margin: 30px;
-    }
-
-    .extra3 {
-
+        height: 20vh;
+        overflow: scroll;
     }
 
 }
