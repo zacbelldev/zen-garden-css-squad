@@ -116,7 +116,8 @@ a {
   position: absolute;
   top: 135px;
   left: 38vw;
-  height: 560px; }
+  height: 560px;
+  z-index: 25; }
 
 .sidebar {
   position: absolute;
