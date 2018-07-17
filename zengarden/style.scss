@@ -72,7 +72,7 @@ a {
     font-family: $linkFont;
 }
 
-#zen-preamble > h3  {
+#zen-preamble > h3 {
     margin-top: 30px;
 }
 
@@ -103,6 +103,7 @@ a {
     background-size: contain;
     top: 0;
     left: 0;
+    opacity: 0;
     position: absolute;
     width: 290px;
     height: 50px;
@@ -124,8 +125,10 @@ a {
 @keyframes slideFromLeftFlash {
     0% {
         left: -390px;
+        opacity: 1;
     }
 
+<<<<<<< HEAD
     10% {
         left: -200px;
     }
@@ -134,32 +137,46 @@ a {
 //        left: -100px;
 //    }
 
+=======
+>>>>>>> dd790441b5ba6a76e07ee2210f28e8fdfb2948f7
     40% {
         left: 0px;
+        opacity: 0;
     }
 
     60% {
-        left: -100px;
+        left: 150%;
+        opacity: 1;
     }
 
+<<<<<<< HEAD
     70% {
         left: 100%;
         opacity:0;
+=======
+    61% {
+        opacity: 0;
+>>>>>>> dd790441b5ba6a76e07ee2210f28e8fdfb2948f7
     }
 
     80% {
         left: -390px;
-        opacity:0;
+        opacity: 0;
     }
 
+<<<<<<< HEAD
     90% {
         left: -200px;
         opacity:1;
+=======
+    81% {
+        opacity: 1;
+>>>>>>> dd790441b5ba6a76e07ee2210f28e8fdfb2948f7
     }
 
     100% {
-        left: -100px;
-        opacity:0;
+        left: 0px;
+        opacity: 0;
     }
 }
 
@@ -168,6 +185,7 @@ a {
         left: -120px;
     }
 
+<<<<<<< HEAD
     10% {
         left: 0px;
     }
@@ -176,6 +194,8 @@ a {
 //        left: 100px;
 //    }
 
+=======
+>>>>>>> dd790441b5ba6a76e07ee2210f28e8fdfb2948f7
     40% {
         left: 270px;
     }
@@ -193,15 +213,19 @@ a {
         left: -120px;
         opacity: 0;
     }
+    
     81% {
         opacity: 1;
     }
+<<<<<<< HEAD
     90% {
         left: 0px;
     }
+=======
+>>>>>>> dd790441b5ba6a76e07ee2210f28e8fdfb2948f7
 
     100% {
-        left: 100px;
+        left: 270px;
     }
 }
 
