@@ -107,7 +107,7 @@ a {
     position: absolute;
     width: 290px;
     height: 50px;
-    animation: slideFromLeftFlash 10s 1;
+    animation: slideFromLeftFlash 10s infinite;
 }
 
 .extra2 {
@@ -119,7 +119,7 @@ a {
     position: absolute;
     width: 100px;
     height: 50px;
-    animation: slideFromLeftBiker 10s 1;
+    animation: slideFromLeftBiker 10s infinite;
 }
 
 @keyframes slideFromLeftFlash {
@@ -134,7 +134,7 @@ a {
     }
 
     60% {
-        left: 150%;
+        left: 125%;
         opacity: 1;
     }
 
@@ -152,7 +152,7 @@ a {
     }
 
     100% {
-        left: 0px;
+        left: -250px;
         opacity: 0;
     }
 }
@@ -179,13 +179,13 @@ a {
         left: -120px;
         opacity: 0;
     }
-    
+
     81% {
         opacity: 1;
     }
 
     100% {
-        left: 270px;
+        left: -150px;
     }
 }
 
@@ -193,9 +193,10 @@ a {
     height: 2px;
     width: 50px;
     background: $tronBlue;
-    margin-top: 20em;
+    margin-top: 25em;
+    position: absolute;
     z-index: -10;
-    animation: pulseLeft .75s infinite;
+    animation: pulseLeft .95s infinite;
 }
 
 @keyframes pulseLeft {
@@ -224,7 +225,7 @@ a {
     right: 0;
     position: absolute;
     z-index: 0;
-    animation: pulseRight 2s infinite;
+    animation: pulseRight 7s infinite;
 }
 
 @keyframes pulseRight {
@@ -253,6 +254,27 @@ a {
         margin-right: 80em;
         width: 100px
     }
+}
+
+.extra5 {
+    height: 2px;
+    width: 50px;
+    background: $tronBlue;
+    margin-top: 17.5em;
+    right: 0;
+    position: absolute;
+    z-index: 0;
+    animation: pulseRight 2s infinite;
+}
+
+.extra6 {
+    height: 2px;
+    width: 50px;
+    background: $tronBlue;
+    margin-top: 22.5em;
+    position: absolute;
+    z-index: 0;
+    animation: pulseLeft 4s infinite;
 }
 
 //LEFT SECTION
