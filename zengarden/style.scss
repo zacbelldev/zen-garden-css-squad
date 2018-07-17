@@ -122,6 +122,73 @@ a {
     animation: slideFromLeftBiker 10s 1;
 }
 
+@keyframes slideFromLeftFlash {
+    0% {
+        left: -390px;
+        opacity: 1;
+    }
+
+    40% {
+        left: 0px;
+        opacity: 0;
+    }
+
+    60% {
+        left: 150%;
+        opacity: 1;
+    }
+
+    61% {
+        opacity: 0;
+    }
+
+    80% {
+        left: -390px;
+        opacity: 0;
+    }
+
+    81% {
+        opacity: 1;
+    }
+
+    100% {
+        left: 0px;
+        opacity: 0;
+    }
+}
+
+@keyframes slideFromLeftBiker {
+    0% {
+        left: -120px;
+    }
+
+    40% {
+        left: 270px;
+    }
+
+    60% {
+        left: 150%;
+        opacity: 1;
+    }
+
+    61% {
+        opacity: 0;
+    }
+
+    80% {
+        left: -120px;
+        opacity: 0;
+    }
+    
+    81% {
+        opacity: 1;
+    }
+
+    100% {
+        left: 270px;
+    }
+}
+
 .extra3 {
     height: 2px;
     width: 50px;
@@ -185,103 +252,6 @@ a {
     100% {
         margin-right: 80em;
         width: 100px
-    }
-}
-
-
-@keyframes slideFromLeftFlash {
-    0% {
-        left: -390px;
-        opacity: 1;
-    }
-
-    10% {
-        left: -200px;
-    }
-
-//    30% {
-//        left: -100px;
-//    }
-
-    40% {
-        left: 0px;
-        opacity: 0;
-    }
-
-    60% {
-        left: 150%;
-        opacity: 1;
-    }
-
-    70% {
-        left: 100%;
-        opacity:0;
-    }
-    61% {
-        opacity: 0;
-    }
-
-    80% {
-        left: -390px;
-        opacity: 0;
-    }
-
-    90% {
-        left: -200px;
-        opacity:1;
-    }
-
-    81% {
-        opacity: 1;
-    }
-
-    100% {
-        left: 0px;
-        opacity: 0;
-    }
-}
-
-@keyframes slideFromLeftBiker {
-    0% {
-        left: -120px;
-    }
-
-    10% {
-        left: 0px;
-    }
-
-//    30% {
-//        left: 100px;
-//    }
-
-    40% {
-        left: 270px;
-    }
-
-    60% {
-        left: 150%;
-        opacity: 1;
-    }
-
-    61% {
-        opacity: 0;
-    }
-
-    80% {
-        left: -120px;
-        opacity: 0;
-    }
-
-    81% {
-        opacity: 1;
-    }
-
-    90% {
-        left: 0px;
-    }
-
-    100% {
-        left: 270px;
     }
 }
 
