@@ -71,21 +71,73 @@ a {
   height: 50px;
   animation: slideFromLeftBiker 10s 1; }
 
+.extra3 {
+  height: 2px;
+  width: 50px;
+  background: #53fdff;
+  margin-top: 20em;
+  z-index: -10;
+  animation: pulseLeft .75s infinite; }
+
+@keyframes pulseLeft {
+  55% {
+    margin-left: 10em;
+    width: 60px; }
+  85% {
+    margin-left: 30em;
+    width: 80px; }
+  100% {
+    margin-left: 50em;
+    width: 100px; } }
+.extra4 {
+  height: 2px;
+  width: 50px;
+  background: #53fdff;
+  margin-top: 14.5em;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  animation: pulseRight 2s infinite; }
+
+@keyframes pulseRight {
+  55% {
+    margin-right: 10em;
+    width: 60px; }
+  85% {
+    margin-right: 30em;
+    width: 80px; }
+  90% {
+    margin-right: 32em;
+    width: 80px; }
+  95% {
+    margin-right: 40em;
+    width: 80px; }
+  100% {
+    margin-right: 80em;
+    width: 100px; } }
 @keyframes slideFromLeftFlash {
   0% {
     left: -390px;
     opacity: 1; }
+  10% {
+    left: -200px; }
   40% {
     left: 0px;
     opacity: 0; }
   60% {
     left: 150%;
     opacity: 1; }
+  70% {
+    left: 100%;
+    opacity: 0; }
   61% {
     opacity: 0; }
   80% {
     left: -390px;
     opacity: 0; }
+  90% {
+    left: -200px;
+    opacity: 1; }
   81% {
     opacity: 1; }
   100% {
@@ -94,6 +146,8 @@ a {
 @keyframes slideFromLeftBiker {
   0% {
     left: -120px; }
+  10% {
+    left: 0px; }
   40% {
     left: 270px; }
   60% {
@@ -106,6 +160,8 @@ a {
     opacity: 0; }
   81% {
     opacity: 1; }
+  90% {
+    left: 0px; }
   100% {
     left: 270px; } }
 #zen-supporting {
