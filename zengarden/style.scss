@@ -31,63 +31,7 @@ $linkColor: $white;
 $linkFont: $electroFont;
 
 @import 'partials/generalStyles';
-* {
-    margin: 0;
-    padding: 0;
-    color: $defaultTextColor;
-    box-sizing: border-box;
-}
 
-html {
-    background-image: url(/assets/tronbg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    background-color: black;
-}
-
-body {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.68); //    background-color: $htmlBodyBackgroundColor;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: $headingColor;
-    font-family: $headingFont;
-}
-
-p {
-    color: $paragraphColor;
-    font-family: $paragraphFont;
-}
-
-a {
-    color: $linkColor;
-    font-family: $linkFont;
-}
-
-#zen-preamble > h3 {
-    margin-top: 30px;
-}
-
-
-// -------------------------------SECTIONS
-//TOP SECTION
-//h1,
-//h2,
-//h3,
-//h4,
-//h5,
-//h6, {
-//    font-size: 2em;
-//    background-color: rgba(255, 255, 255, 0.25);
-//}
 .intro {
     margin: 20px;
     font-size: 15px;
