@@ -164,13 +164,15 @@ a {
   animation: pulseRight 2s infinite; }
 
 .extra6 {
-  height: 2px;
-  width: 50px;
-  background: #53fdff;
-  margin-top: 22.5em;
+  background: url(/assets/official_tron_logo.svg);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 50px;
   position: absolute;
-  z-index: 0;
-  animation: pulseLeft 4s infinite; }
+  right: 0;
+  border-radius: 0px 0px 0px 5px; }
 
 #zen-supporting {
   position: absolute;
@@ -343,6 +345,17 @@ footer:hover {
     #zen-benefits:hover,
     #zen-requirements:hover,
     footer:hover {
-      transform: none; } }
+      transform: none; }
+
+  .extra6 {
+    background: url(/assets/official_tron_logo.svg);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    border-radius: 0px 0px 0px 5px; } }
 
 /*# sourceMappingURL=style.css.map */
