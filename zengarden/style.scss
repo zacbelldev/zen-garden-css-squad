@@ -231,6 +231,7 @@ $linkFont: $electroFont;
     left: 38vw;
     height: 560px;
     z-index: 25;
+    animation: float 5s infinite;
 }
 
 //RIGHT SECTION
@@ -248,9 +249,6 @@ $linkFont: $electroFont;
 }
 
 // -------------------------------LEFT SECTION 3D LAYER EFFECTS
-#zen-supporting {
-    animation: float 5s infinite;
-}
 
 @keyframes float {
     60% {
@@ -425,14 +423,6 @@ footer:hover {
         box-shadow: 0px -10px 74px 31px rgba(83, 253, 255, 0.35);
     }
 
-    .zen-supporting {
-        left: 20vw;
-        top: 50%;
-        margin: 0;
-        padding: 20px;
-        border: 1px solid $tronBlue;
-    }
-
     .sidebar {
         height: 280px;
         overflow: scroll;
@@ -452,9 +442,6 @@ footer:hover {
         height: 225px;
         overflow: hidden;
         overflow-y: scroll;
-    }
-
-    #zen-supporting {
         animation: none;
     }
 
