@@ -249,7 +249,6 @@ $linkFont: $electroFont;
 }
 
 // -------------------------------LEFT SECTION 3D LAYER EFFECTS
-
 @keyframes float {
     60% {
         transform: translateY(-30px);
@@ -456,7 +455,16 @@ footer:hover {
         box-shadow: none;
         transition: all 0.3s ease-out;
         padding: 15px;
-        text-align: center;
+        text-align: left;
+    }
+
+    #zen-supporting div:hover,
+    #zen-supporting footer:hover {
+        box-shadow: none;
+        width: inherit;
+        height: auto;
+        padding: 15px;
+        text-align: left;
     }
 
     #zen-participation,
