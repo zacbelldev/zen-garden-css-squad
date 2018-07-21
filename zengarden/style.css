@@ -9,7 +9,7 @@
   box-sizing: border-box; }
 
 html {
-  background-image: url(/assets/tronbg.png);
+  background-image: url(assets/tronbg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -49,7 +49,7 @@ a {
   z-index: 11; }
 
 .extra1 {
-  background-image: url(/assets/tron-01.png);
+  background-image: url(assets/tron-01.png);
   background-repeat: no-repeat;
   background-size: contain;
   top: 0;
@@ -61,7 +61,7 @@ a {
   animation: slideFromLeftFlash 10s infinite; }
 
 .extra2 {
-  background-image: url(/assets/tron-02.png);
+  background-image: url(assets/tron-02.png);
   background-repeat: no-repeat;
   background-size: contain;
   top: 0;
@@ -164,7 +164,7 @@ a {
   animation: pulseRight 2s infinite; }
 
 .extra6 {
-  background: url(/assets/official_tron_logo.svg);
+  background: url(assets/official_tron_logo.svg);
   background-color: white;
   background-repeat: no-repeat;
   background-size: contain;
@@ -189,7 +189,7 @@ a {
 
 .wrapper div ul li {
   list-style: none;
-  list-style-image: url(/assets/trondisk_15px.png); }
+  list-style-image: url(assets/trondisk_15px.png); }
 
 #zen-supporting {
   animation: float 5s infinite; }
@@ -348,7 +348,7 @@ footer:hover {
       transform: none; }
 
   .extra6 {
-    background: url(/assets/official_tron_logo.svg);
+    background: url(assets/official_tron_logo.svg);
     background-color: white;
     background-repeat: no-repeat;
     background-size: contain;
